@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+            border-radius: 10px;
+            text-align: center;
+            transition: 
+            width 2s,
+            height 2s,
+            background-color 2s,
+            rotate 2s;
+        }
+        .box:hover{
+            background-color: chocolate;
+            width: 200px;
+            height: 200px;
+            rotate: 360deg;
+        }
+        p{
+            color: blue;
+            font-size: 40px;
+        }
+        p:hover{
+            cursor: pointer;
+            color: brown;
+            font-size: 60px;
+
+        }
+.animate{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: chartreuse;
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes animate {
+    0%{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    25%{
+        margin-top: 250px;
+        margin-left: 0;
+    }
+    50%{
+        margin-top: 250px;
+        margin-left: 250px;
+    }
+    100%{
+        margin-top: 0;
+        margin-left: 250px;
+    }
+}
+    
+     .animated-element-1{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        margin-top: 100px;
+        margin-left: 360px;
+        border-radius: 100px;
+        background-color: darkorange;
+        animation-name: element1;
+        animation-duration: 15s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+     }
+     @keyframes element1{
+        0%{
+            transform: scale(1);
+            opacity: 1;
+        }
+        50%{
+             transform:scale(2) ;
+             opacity: 0.5;
+        }
+        100%{
+            transform: scale(1);
+            opacity: 1;
+        }
+     }
+
+    </style>
+</head>
+<body>
+    <h1>transition-property</h1>
+    <div class="box">zoreez khan</div>
+    <p>website</p>
+    <div class="animate">animate</div>
+    <div class="animated-element-1"></div>
+    
+</body>
+</html>
